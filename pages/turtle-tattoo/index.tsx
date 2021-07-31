@@ -1,13 +1,10 @@
-import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect } from 'react';
 import styles from '../../styles/Home.module.css'
 
 export default function Home() {
-    const router = useRouter();
     useEffect(() => {
-        router.push("https://youtu.be/dQw4w9WgXcQ");
+        window.location.replace("https://youtu.be/dQw4w9WgXcQ");
     },[]);
   return (
     <div className={styles.container}>
