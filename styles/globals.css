@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Chulabhornlikit";
+  src: url(/chulabhornlikittext-regular.woff2) format('woff2');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Comic Sans MS", "Chulabhornlikit", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
