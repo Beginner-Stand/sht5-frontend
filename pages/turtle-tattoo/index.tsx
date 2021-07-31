@@ -16,11 +16,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          ยินต้อนรับเข้าสู่เทคโนโลยีสมัยนี้
+          ยินต้อนรับเข้าสู่ &quot;เทคโนโลยีสมัยนี้&quot; 
         </h1>
 
         <p className={styles.description}>
-          เชิญชมสิ่งที่ทำได้ด้วย &quot;เทคโนโลยีสมัยนี้&quot;
+          เชิญชมสิ่งที่ทำได้ด้วย  &quot;เทคโนโลยีสมัยนี้&quot; 
         </p>
 
       </main>
