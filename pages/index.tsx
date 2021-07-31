@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          เชิญชมสิ่งที่ทำได้ด้วย "เทคโนโลยีสมัยนี้"
+          เชิญชมสิ่งที่ทำได้ด้วย &quot;เทคโนโลยีสมัยนี้&quot;
         </p>
 
         <div className={styles.grid}>
