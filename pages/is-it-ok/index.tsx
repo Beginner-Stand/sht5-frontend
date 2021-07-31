@@ -60,11 +60,8 @@ export default function Home() {
         const url =
           "https://ti9qsdjhe4.execute-api.ap-southeast-1.amazonaws.com/dev/getitem?id=" +
           id;
-        console.log("Check")
         const response = await axios.get(url);
-        console.log(response.data)
         if (!!response.data.distance) {
-          console.log("clearInterval")
           clearInterval(i);
           resolve(response.data.distance);
         }
