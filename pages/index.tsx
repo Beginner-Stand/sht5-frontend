@@ -32,7 +32,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://youtu.be/dQw4w9WgXcQ"
+            href="/turtle-tattoo"
             className={styles.card}
           >
             <h2>สักลายเต่า &rarr;</h2>
