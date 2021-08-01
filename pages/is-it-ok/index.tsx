@@ -61,9 +61,9 @@ export default function Home() {
           "https://ti9qsdjhe4.execute-api.ap-southeast-1.amazonaws.com/dev/getitem?id=" +
           id;
         const response = await axios.get(url);
-        if (!!response.data.distance) {
+        if (response.data.distance || response.data.dferror) {
           clearInterval(i);
-          resolve(response.data.distance);
+          resolve(response.data.distance || response.data.dferror);
         }
       }, 5000);
     });
@@ -145,7 +145,7 @@ export default function Home() {
           }}
         >
           {inProgress && <CircularProgress />}
-          {!!distance && <h1 className={styles.title}> รูปนี้ดูโอ {((1-parseFloat(distance))*100).toFixed(2)}%</h1>}
+          {distance && (distance === 'something went wrong' ? <h1 className={styles.title}>รูปนี้ดูไม่โอ</h1> : <h1 className={styles.title}> รูปนี้ดูโอ {((1-parseFloat(distance))*100).toFixed(2)}%</h1>)}
         </div>
       </main>
     </div>
