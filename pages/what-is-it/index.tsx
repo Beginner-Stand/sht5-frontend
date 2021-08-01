@@ -25,8 +25,11 @@ export default function Home() {
   const [inProgress, setInProgress] = useState(false);
   const [color, setColor] = useState("");
   // On file select (from the pop up)
+  function isFileImage(file:File) {
+    return file && file['type'].split('/')[0] === 'image';
+  }
   const onFileChange = async (event: any) => {
-    if (!event.target.files[0]) {
+    if (!isFileImage(event.target.files[0])) {
       return;
     }
     // Update the state
@@ -132,6 +135,7 @@ export default function Home() {
           ref={hiddenFileInput}
           onChange={onFileChange}
           style={{ display: "none" }}
+          accept="image/*"
         />
         <div
           style={{
